@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.hljs {
+  background-color: #090e1f !important;
+  border-radius: 8px;
+}
 .article p {
-  color: rgb(31 41 55 / 0.9);
-  line-height: 1.75rem;
-  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.8rem;
+  font-size: 1rem;
   margin: 1.2rem 0;
 }
 
-.article a {
+.article a:not(.not-a) {
   color: rgb(31 41 55);
   text-decoration: underline;
   transition: all;
@@ -18,7 +22,7 @@
   color: rgb(31 41 55/0.8);
 }
 
-.article img {
+.article img:not(.not-img) {
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -33,7 +37,7 @@
   text-decoration: underline;
 }
 
-.article h2 {
+.article h2:not(.not-h2) {
   color: rgb(31 41 55 / 0.9);
   font-size: 1.75rem;
   font-weight: 600;

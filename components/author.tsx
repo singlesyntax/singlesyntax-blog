@@ -14,7 +14,7 @@ export default async function Author({ children }: { children: string }) {
     <Link
       key={author.id}
       href={`/author/${author.name.toLowerCase().replace(" ", "-")}`}
-      className="text-gray-800/80"
+      className="text-gray-800/90"
     >
       {author.name}
     </Link>

@@ -19,7 +19,7 @@ const getFeaturedImg = async (imageID: number) => {
   return data;
 };
 export default async function FeaturedImg({ children }: { children: number }) {
-  const image = await getFeaturedImg(children);
+  const image = await getFeaturedImg(children ? children : 156);
 
   return (
     <Image
